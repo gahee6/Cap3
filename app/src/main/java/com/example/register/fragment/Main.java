@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -34,7 +35,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class Main extends Fragment {
 
-    Button btnSearch;
+    ImageButton btnSearch;
     private View view;
     private ArrayList<MainData> arrayList;
     private MainAdapter mainAdapter;
