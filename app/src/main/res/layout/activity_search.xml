@@ -45,17 +45,4 @@
         </LinearLayout>
 
     </LinearLayout>
-
-
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomnavi"
-        android:background="@drawable/layout_background"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        app:itemIconTint="#000000"
-        app:itemTextColor="#000000"
-        app:menu="@menu/bottom_menu" />
-
 </LinearLayout>
