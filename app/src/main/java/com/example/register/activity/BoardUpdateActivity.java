@@ -57,7 +57,6 @@ public class BoardUpdateActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.board_update);
-        getSupportActionBar().setTitle("시간어때");
         init();
 
         // 레트로핏 설정

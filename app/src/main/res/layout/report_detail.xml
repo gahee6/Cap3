@@ -5,11 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/layout_background"
     tools:context=".activity.ReportDetailActivity"
     >
     <LinearLayout
-        android:background="@drawable/layout_background"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -17,20 +15,23 @@
 
         <ImageButton
             android:background="@null"
+            android:layout_weight="1"
             android:id="@+id/btnBack"
-            android:layout_weight="0.8"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:src="@drawable/ic_baseline_keyboard_backspace_24" />
+            android:src="@drawable/ic_baseline_keyboard_backspace_24"
+            android:layout_gravity="center"/>
 
         <TextView
-            android:layout_weight="4.5"
+            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="글 확인"
+            android:text="시간어때"
             android:textColor="#000000"
             android:textSize="20dp"
-            android:layout_marginLeft="115dp"/>
+            android:layout_marginLeft="115dp"
+            android:layout_gravity="center"
+            />
 
         <ImageButton
             android:id="@+id/btnMenu"
@@ -40,29 +41,27 @@
             android:layout_gravity="center"
             android:adjustViewBounds="true"
             android:background="@color/white"
-            android:layout_marginLeft="150dp"
+            android:layout_marginLeft="100dp"
             android:src="@drawable/menu"
             android:visibility="invisible"
             />
     </LinearLayout>
 
-
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/layout_background"
         android:orientation="vertical"
-        android:padding="15dp">
-
+        android:padding="10dp"
+        android:background="@drawable/layout_background"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="작성자 닉네임 "
+            android:text="작성자 "
             android:textColor="@color/black"
-            android:textSize="20dp" />
+            android:textSize="18dp" />
 
         <TextView
             android:id="@+id/txtMemberId"
@@ -71,59 +70,51 @@
             android:textColor="@color/black"
             android:textSize="15dp" />
 
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="15dp"
             android:text="제목 "
             android:textColor="@color/black"
-            android:textSize="20dp" />
+            android:textSize="18dp" />
 
         <TextView
             android:id="@+id/txtTitle"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="20dp"
             android:textColor="@color/black"
-            android:textSize="18dp" />
+            android:textSize="15dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="15dp"
-            android:text="가해자 닉네임 "
-            android:textColor="@color/black"
-            android:textSize="20dp" />
-
-        <TextView
-            android:id="@+id/txtAttackerNickname"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:text="가해자"
             android:textColor="@color/black"
             android:textSize="18dp" />
 
         <TextView
+            android:id="@+id/txtAttackerNickname"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
             android:paddingTop="15dp"
             android:text="내용 "
             android:textColor="@color/black"
-            android:textSize="20dp" />
+            android:textSize="18dp" />
 
         <TextView
             android:id="@+id/txtContent"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textColor="@color/black"
-            android:textSize="18dp" />
-
-
-        <View
-
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000001" />
+            android:textSize="15dp"
+            android:layout_marginBottom="10dp"/>
 
     </LinearLayout>
 
@@ -146,8 +137,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="290dp"
                     android:layout_marginTop="10dp"
-                    android:divider="@color/black"
-                    android:dividerHeight="5dp" />
+                    android:divider="#EAEAEA"
+                    android:dividerHeight="2dp" />
             </LinearLayout>
 
             >
@@ -177,7 +168,7 @@
             android:adjustViewBounds="true"
             android:background="@color/white"
             android:scaleType="fitCenter"
-            android:src="@drawable/send"
+            android:src="@drawable/ic_baseline_send_24"
             android:id="@+id/send"/>
     </LinearLayout>
 

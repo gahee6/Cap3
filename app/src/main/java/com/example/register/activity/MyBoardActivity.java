@@ -65,7 +65,6 @@ public class MyBoardActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.myboard);
-        getSupportActionBar().setTitle("시간어때");
 
         // 레트로핏 설정
         Retrofit retrofit = new Retrofit.Builder()

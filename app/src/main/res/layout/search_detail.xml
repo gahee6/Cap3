@@ -4,55 +4,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/layout_background"
     tools:context=".activity.SearchDetailActivity"
     android:orientation="vertical">
 
     <LinearLayout
-        android:background="@drawable/layout_background"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp">
 
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_background">
 
         <ImageButton
             android:background="@null"
             android:id="@+id/btnBack"
-            android:layout_width="50dp"
+            android:layout_width="30dp"
             android:layout_height="40dp"
-            android:src="@drawable/ic_baseline_keyboard_backspace_24" />
+            android:src="@drawable/ic_baseline_keyboard_backspace_24"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp" />
 
         <EditText
-            android:background="@drawable/layout_background"
             android:id="@+id/editSearch"
-            android:layout_width="274dp"
+            android:layout_width="290dp"
             android:layout_height="wrap_content"
-            android:hint="제목, 내용, 해시태그 검색" />
+            android:hint="제목, 내용, 해시태그 검색"
+            android:background="@null"
+            android:layout_gravity="center" />
+        </LinearLayout>
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
             android:id="@+id/btnSearch"
+            android:text="검색"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:backgroundTint="@color/white"
+            style="@style/Widget.AppCompat.Button.Borderless"
             ></Button>
 
     </LinearLayout>
 
-
-
     <LinearLayout
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="horizontal"
         android:padding="15dp">
 
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv"
@@ -63,38 +74,23 @@
                 android:scrollbarSize="5dp"
                 android:scrollbarThumbVertical="@android:color/darker_gray"
                 android:scrollbars="vertical">
-
-
             </androidx.recyclerview.widget.RecyclerView>
         </LinearLayout>
 
     </LinearLayout>
 
     <LinearLayout
-        android:background="@drawable/layout_background"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <FrameLayout
-            android:background="@drawable/layout_background"
             android:id="@+id/main_frame"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1" >
 
         </FrameLayout>
-
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottomNavi"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            app:itemIconTint="#000000"
-            app:itemTextColor="#000000"
-            android:background="@drawable/layout_background"
-            app:menu="@menu/bottom_menu" />
 
 
     </LinearLayout>

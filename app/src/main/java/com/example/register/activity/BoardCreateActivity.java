@@ -50,7 +50,6 @@ public class BoardCreateActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.board_create);
-        getSupportActionBar().setTitle("시간어때");
         init();
 
         //레트로핏 설정

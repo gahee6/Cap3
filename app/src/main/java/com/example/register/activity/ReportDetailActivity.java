@@ -75,7 +75,6 @@ public class ReportDetailActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.report_detail);
-        getSupportActionBar().setTitle("시간어때");
         init();
 
         // 레트로핏 설정

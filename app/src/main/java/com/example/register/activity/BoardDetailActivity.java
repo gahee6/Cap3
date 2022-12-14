@@ -75,7 +75,7 @@ public class BoardDetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.write_detail);
-        getSupportActionBar().setTitle("시간어때");
+
 
         init();
 

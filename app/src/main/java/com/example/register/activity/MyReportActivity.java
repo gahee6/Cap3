@@ -60,7 +60,6 @@ public class MyReportActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.myreport);
-        getSupportActionBar().setTitle("시간어때");
 
         // 레트로핏 설정
         Retrofit retrofit = new Retrofit.Builder()

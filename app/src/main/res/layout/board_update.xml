@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/layout_background"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,9 +8,7 @@
     tools:context=".activity.MainActivity"
     >
 
-
     <LinearLayout
-        android:background="@drawable/layout_background"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -39,13 +36,15 @@
         <Button
             android:layout_weight="1"
             android:id="@+id/btnWrite"
-            android:layout_width="50dp"
-            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
             android:layout_gravity="center"
             android:padding="0dp"
             android:layout_marginLeft="85dp"
             android:text="완료"
-            />
+            android:textStyle="bold"
+            android:backgroundTint="#1266FF"
+            android:textSize="15dp"/>
     </LinearLayout>
 
     <ScrollView
@@ -54,96 +53,93 @@
         android:layout_weight="1">
 
         <LinearLayout
-            android:background="@drawable/layout_background"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="10dp">
 
             <LinearLayout
-
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_weight="1"
-                >
+                android:layout_weight="1">
+
                 <EditText
                     android:hint="제목"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
                     android:textSize="20dp"
-                    android:id="@+id/editTitle"/>
-
-
+                    android:id="@+id/editTitle"
+                    android:background="@null"
+                    android:layout_marginBottom="10dp"/>
 
                 <EditText
                     android:gravity="top"
-                    android:hint="내용을 입력하세요."
+                    android:hint="내용"
                     android:layout_width="match_parent"
                     android:layout_height="190dp"
                     android:background="@null"
-                    android:textSize="15dp"
+                    android:textSize="18dp"
                     android:id="@+id/editContent"
-                    />
+                    android:layout_marginBottom="10dp" />
+
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_gravity="bottom"
                 android:orientation="vertical">
+
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="조건 : 여학우만 가능합니다."
                     android:textColor="@color/black"
                     android:textSize="15dp"
-                    android:id="@+id/editRequirement"/>
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:paddingTop="15dp"
-                    android:text="해시태그 :"
-                    android:textColor="@color/black"
-                    android:textSize="15dp" />
-
+                    android:id="@+id/editRequirement"
+                    android:background="@null"
+                    android:layout_marginBottom="10dp"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="#"
-                        android:textColor="#0E65AA"
-                        android:textSize="20dp" />
+                        android:textColor="#1266FF"
+                        android:textSize="20dp"
+                        android:layout_marginRight="5dp"/>
 
                     <EditText
                         android:layout_width="75dp"
                         android:layout_height="wrap_content"
                         android:hint="커피"
                         android:textSize="18dp"
-                        android:id="@+id/editHashtag1"/>
+                        android:id="@+id/editHashtag1"
+                        android:background="@null"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="#"
-                        android:textColor="#0E65AA"
-                        android:textSize="20dp" />
+                        android:textColor="#1266FF"
+                        android:textSize="20dp"
+                        android:layout_marginRight="5dp"/>
 
                     <EditText
                         android:layout_width="75dp"
                         android:layout_height="wrap_content"
                         android:hint="줄서기"
                         android:textSize="18dp"
-                        android:id="@+id/editHashtag2"/>
+                        android:id="@+id/editHashtag2"
+                        android:background="@null"/>
 
                 </LinearLayout>
 
@@ -154,18 +150,18 @@
                     android:orientation="horizontal">
 
                     <EditText
-                        android:paddingTop="20dp"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:hint="금액"
                         android:textColor="@color/black"
-                        android:textSize="15dp"
-                        android:id="@+id/editPrice"/>
+                        android:textSize="18dp"
+                        android:id="@+id/editPrice"
+                        android:background="@null"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="₩"
+                        android:text="원"
                         android:textColor="@color/black"
                         android:textSize="18dp" />
                 </LinearLayout>

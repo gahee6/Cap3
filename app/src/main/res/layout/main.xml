@@ -6,26 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".activity.MainActivity"
     android:orientation="vertical">
+
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="50dp"
-    android:orientation="horizontal" >
+    android:orientation="horizontal">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:text="시간어때"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:gravity="center"
-        android:layout_marginLeft="140dp"
-        android:layout_marginRight="100dp"
-        android:textColor="@color/black">
+        android:layout_marginLeft="160dp"
+        android:layout_marginRight="120dp"
+        android:textColor="@color/black"
+        android:textStyle="bold">
     </TextView>
 
     <ImageButton
         android:id="@+id/btnSearch"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
         android:src="@drawable/ic_baseline_search_24"
         android:background="@null"
         android:layout_gravity="center"
@@ -53,6 +55,8 @@
         android:layout_marginBottom="20dp"
         android:src="@drawable/add"
         android:id="@+id/add"
+        android:backgroundTint="#EAEAEA"
+        app:borderWidth="0dp"
         />
 
     <LinearLayout

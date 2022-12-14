@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity.MainActivity"
-    >
+    tools:context=".activity.MainActivity">
 
     <LinearLayout
-        android:background="@drawable/layout_background"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -18,20 +15,23 @@
 
         <ImageButton
             android:background="@null"
+            android:layout_weight="1"
             android:id="@+id/btnBack"
-            android:layout_weight="0.8"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:src="@drawable/ic_baseline_keyboard_backspace_24" />
+            android:src="@drawable/ic_baseline_keyboard_backspace_24"
+            android:layout_gravity="center"/>
 
         <TextView
-            android:layout_width="54dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="115dp"
-            android:layout_weight="4.5"
-            android:text="글 확인"
+            android:text="시간어때"
             android:textColor="#000000"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:layout_marginLeft="115dp"
+            android:layout_gravity="center"
+            />
 
         <ImageButton
             android:id="@+id/btnMenu"
@@ -41,7 +41,7 @@
             android:layout_gravity="center"
             android:adjustViewBounds="true"
             android:background="@color/white"
-            android:layout_marginLeft="150dp"
+            android:layout_marginLeft="100dp"
             android:src="@drawable/menu"
             android:visibility="invisible"
             />
@@ -53,12 +53,14 @@
         android:layout_weight="1"
         >
         <LinearLayout
-            android:background="@drawable/layout_background"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:padding="15dp">
+            android:padding="10dp"
+            android:background="@drawable/layout_background"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -67,9 +69,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="작성자 닉네임 "
+                android:text="작성자 "
                 android:textColor="@color/black"
-                android:textSize="20dp"
+                android:textSize="18dp"
                 />
 
             <TextView
@@ -81,21 +83,20 @@
                 />
         </LinearLayout>
 
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="제목 "
                 android:textColor="@color/black"
-                android:textSize="20dp"
+                android:textSize="18dp"
                 android:paddingTop="15dp"
                 />
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="20dp"
                 android:textColor="@color/black"
-                android:textSize="18dp"
+                android:textSize="15dp"
                 android:id="@+id/txtTitle"/>
 
             <TextView
@@ -104,24 +105,22 @@
                 android:paddingTop="15dp"
                 android:text="업무내용 "
                 android:textColor="@color/black"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
 
             <TextView
                 android:textColor="@color/black"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:textSize="18dp"
+                android:layout_height="20dp"
+                android:textSize="15dp"
                 android:id="@+id/txtContent"/>
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
                 android:paddingTop="15dp"
                 android:text="해시태그 "
                 android:textColor="@color/black"
-                android:textSize="20dp"
-
+                android:textSize="18dp"
                 />
 
             <LinearLayout
@@ -134,27 +133,29 @@
                     android:layout_height="wrap_content"
                     android:text="#"
                     android:textColor="@color/black"
-                    android:textSize="20dp" />
+                    android:textSize="18dp"
+                    android:layout_marginRight="5dp"/>
 
                 <TextView
                     android:layout_width="75dp"
                     android:layout_height="wrap_content"
-                    android:textSize="18dp"
-                    android:id="@+id/txtHashtag1"/>
+                    android:textSize="15dp"
+                    android:id="@+id/txtHashtag1"
+                    android:layout_marginRight="10dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="#"
                     android:textColor="@color/black"
-                    android:textSize="20dp" />
+                    android:layout_marginRight="5dp"
+                    android:textSize="18dp" />
 
                 <TextView
                     android:layout_width="75dp"
                     android:layout_height="wrap_content"
-                    android:textSize="18dp"
-                    android:id="@+id/txtHashtag2"/>
-
+                    android:textSize="15dp"
+                    android:id="@+id/txtHashtag2" />
 
             </LinearLayout>
 
@@ -164,7 +165,7 @@
                 android:paddingTop="15dp"
                 android:text="금액 "
                 android:textColor="@color/black"
-                android:textSize="20dp" />
+                android:textSize="18dp" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -175,15 +176,15 @@
                     android:textColor="@color/black"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:textSize="18dp"
-                    android:id="@+id/txtPrice"/>
+                    android:textSize="15dp"
+                    android:id="@+id/txtPrice" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="₩"
+                    android:text="원"
                     android:textColor="@color/black"
-                    android:textSize="20dp" />
+                    android:textSize="18dp" />
             </LinearLayout>
 
 
@@ -193,14 +194,13 @@
                 android:paddingTop="10dp"
                 android:text="조건 "
                 android:textColor="@color/black"
-                android:textSize="20dp"
+                android:textSize="18dp"
                 />
 
             <TextView
-                android:hint="여학우만 가능합니다."
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="18dp"
+                android:textSize="15dp"
                 android:textColor="@color/black"
                 android:id="@+id/txtRequirement"
                 android:layout_marginBottom="10dp"
@@ -212,8 +212,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <LinearLayout
-            android:background="@drawable/layout_background"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -229,21 +229,15 @@
             <ListView
                 android:id="@+id/listView1"
                 android:layout_width="match_parent"
-                android:layout_height="137dp"
-                android:layout_marginTop="5dp"
-                android:divider="@color/black"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:divider="#EAEAEA"
                 android:dividerHeight="2dp" />
         </LinearLayout>
 
     </ScrollView>
 
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
         <LinearLayout
-            android:background="@drawable/layout_background"
             android:layout_gravity="bottom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -264,14 +258,13 @@
                 android:adjustViewBounds="true"
                 android:background="@color/white"
                 android:scaleType="fitCenter"
-                android:src="@drawable/send"
+                android:src="@drawable/ic_baseline_send_24"
                 android:id="@+id/send"/>
         </LinearLayout>
 
     </LinearLayout>
 
 
-</LinearLayout>
 
 
 

@@ -54,7 +54,6 @@ public class ReportCreateActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.report_create);
-        getSupportActionBar().setTitle("시간어때");
 
         init();
 

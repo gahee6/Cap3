@@ -38,7 +38,6 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
         init();
-        getSupportActionBar().setTitle("시간어때");
 
         //레트로핏 설정
         Retrofit retrofit = new Retrofit.Builder()

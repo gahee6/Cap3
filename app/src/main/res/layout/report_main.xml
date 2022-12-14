@@ -7,6 +7,24 @@
     tools:context=".activity.MainActivity"
     android:orientation="vertical">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="시간어때"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_marginLeft="160dp"
+            android:layout_marginRight="120dp"
+            android:textColor="@color/black"
+            android:textStyle="bold">
+        </TextView>
+    </LinearLayout>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv"
         android:layout_width="match_parent"
@@ -27,7 +45,9 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="20dp"
         android:src="@drawable/add"
-        android:id="@+id/add"/>
+        android:id="@+id/add"
+        android:backgroundTint="#EAEAEA"
+        app:borderWidth="0dp"/>
 
     <LinearLayout
 

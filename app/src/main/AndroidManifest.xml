@@ -11,7 +11,7 @@
         android:theme="@style/Theme.Register"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".activity.MainActivity"
+            android:name=".activity.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,7 +20,7 @@
         </activity>
         <activity android:name=".activity.RegisterActivity"></activity>
         <activity android:name=".activity.BoardCreateActivity"></activity>
-        <activity android:name=".activity.LoginActivity"></activity>
+        <activity android:name=".activity.MainActivity"></activity>
         <activity android:name=".activity.BoardDetailActivity"></activity>
         <activity android:name=".activity.BoardUpdateActivity"></activity>
         <activity android:name=".activity.MyBoardActivity"></activity>

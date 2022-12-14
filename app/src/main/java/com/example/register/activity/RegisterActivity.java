@@ -48,7 +48,6 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register);
-        getSupportActionBar().setTitle("시간어때");
         init();
 
         //레트로핏 설정
